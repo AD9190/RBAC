@@ -155,14 +155,14 @@ CONNECTION_STRING=your_mongodb_connection_string
 
 ### Middleware
 ### `authMiddleware.js`
--Verifies JWT tokens from the Authorization header.
--Attaches decoded user data to the request object.
--Responds with 401 Unauthorized if invalid or missing.
+- Verifies JWT tokens from the Authorization header.
+- Attaches decoded user data to the request object.
+- Responds with 401 Unauthorized if invalid or missing.
 
 ### `roleMiddleware.js`
--Verifies if the user's role is allowed for the route.
--Responds with 403 Forbidden if not authorized.
--Models
+- Verifies if the user's role is allowed for the route.
+- Responds with 403 Forbidden if not authorized.
+- Models
 
 ### `userModel.js`
 
