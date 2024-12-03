@@ -144,16 +144,16 @@ JWT_SECRET=your_jwt_secret
 CONNECTION_STRING=your_mongodb_connection_string
 ```
 
-###API Endpoints
-##Authentication Routes
--POST `/api/auth/register`: Register a new user. Requires username, password, and role.
--POST `/api/auth/login`: Login and receive a JWT token. Requires username and password.
--User Routes
--GET `/api/user/admin`: Accessible only by "admin" role users.
--GET `/api/user/moderator`: Accessible by "admin" or "moderator" role users.
--GET `/api/user/user`: Accessible by "user", "admin", or "moderator" role users.
+### API Endpoints
+## Authentication Routes
+- POST `/api/auth/register`: Register a new user. Requires username, password, and role.
+- POST `/api/auth/login`: Login and receive a JWT token. Requires username and password.
+- User Routes
+- GET `/api/user/admin`: Accessible only by "admin" role users.
+- GET `/api/user/moderator`: Accessible by "admin" or "moderator" role users.
+- GET `/api/user/user`: Accessible by "user", "admin", or "moderator" role users.
 
-###Middleware
+### Middleware
 ### `authMiddleware.js`
 -Verifies JWT tokens from the Authorization header.
 -Attaches decoded user data to the request object.
@@ -168,6 +168,6 @@ CONNECTION_STRING=your_mongodb_connection_string
 
 -Defines the schema with:
 
--username: Unique string for user identification.
--password: Hashed password.
--role: Enum ("admin", "moderator", "user").
+1. username: Unique string for user identification.
+2. password: Hashed password.
+3. role: Enum ("admin", "moderator", "user").
