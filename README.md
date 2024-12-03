@@ -11,7 +11,6 @@ This project implements a Role-Based Access Control (RBAC) system using Node.js,
 - [API Endpoints](#api-endpoints)
 - [Middleware](#middleware)
 - [Models](#models)
-- [License](#license)
 
 ## Installation
 
@@ -169,6 +168,6 @@ CONNECTION_STRING=your_mongodb_connection_string
 
 -Defines the schema with:
 
---username: Unique string for user identification.
---password: Hashed password.
---role: Enum ("admin", "moderator", "user").
+-username: Unique string for user identification.
+-password: Hashed password.
+-role: Enum ("admin", "moderator", "user").
